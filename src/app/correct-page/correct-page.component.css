@@ -1,4 +1,4 @@
-.login-container {
+.page-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,46 +8,24 @@
   background-color: rgba(225, 225, 225, 0.77);
 }
 
-.form-group {
-  flex-direction: column;
-  display: flex;
-}
-
-.form-control {
-  width: 250px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 18px;
+.page-container h1 {
+  font-size: 4em;
+  color: #0a8c34;
+  display: inline;
 }
 
 .button {
   border-radius: 10px;
   border: none;
   background-color: #32ccb5;
-  padding: 1rem;
+  padding: 2rem;
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
   color: #f1f1f1;
-  width: 17rem;
 }
 
 .button:hover {
   background-color: rgba(50, 204, 181, 0.3);
 
 }
-
-.message{
-  font-size: 26px;
-  color: black;
-}
-.message.success {
-  color: #4CAF50;
-}
-
-.error {
-  color: #FF0000;
-  font-weight: 600;
-}
-

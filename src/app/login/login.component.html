@@ -1,4 +1,4 @@
-<app-confetti *ngIf="loggedIn"></app-confetti>
+<!--<app-confetti *ngIf="loggedIn"></app-confetti>-->
 <div class="login-container">
   <h2>Login</h2>
   <div class="form-group">
@@ -9,8 +9,6 @@
     <label for="password">Password:</label>
     <input id="password" [(ngModel)]="password" name="password" class="form-control">
   </div>
-  <button (click)="login()" class="btn btn-primary">Login</button>
-  <div class="message" [ngClass]="{'success': loggedIn, 'error': !loggedIn && attemptedLogin}">
-    {{ message }}
-  </div>
+  <button (click)="login()" class="button">Login</button>
+  <div class="error">{{message}}</div>
 </div>
